@@ -25,7 +25,6 @@
 		--wpds-dimension-padding-2xl: 24px;
 		--wpds-typography-font-family-body: -apple-system, system-ui, "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
 		--wpds-typography-font-size-lg: 15px;
-		--wpds-typography-font-size-2xl: 32px;
 		--wpds-typography-font-weight-emphasis: 600;
 	}
 	* { box-sizing: border-box; }
@@ -38,19 +37,24 @@
 		line-height: 1.5;
 	}
 	main {
-		max-width: 560px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		max-width: 580px;
+		min-height: 100vh;
+		min-height: 100dvh;
 		margin: 0 auto;
-		padding: 64px 16px;
+		padding: 16px;
 	}
 	.card {
 		background: var(--wpds-color-background-surface-neutral-strong);
 		border: 1px solid var(--wpds-color-stroke-surface-neutral-weak);
 		border-radius: var(--wpds-border-radius-lg);
-		padding: 32px var(--wpds-dimension-padding-2xl);
+		padding: 48px;
 	}
 	h1 {
 		margin: 0 0 var(--wpds-dimension-padding-lg);
-		font-size: var(--wpds-typography-font-size-2xl);
+		font-size: 24px;
 		font-weight: var(--wpds-typography-font-weight-emphasis);
 		line-height: 1.2;
 	}
